@@ -1,17 +1,21 @@
-import math
+from math import *
+
 funcs = dict()
-while True:
-    a = input()
-    bits = a.split()
-    if a[0] == ':':
-        funcs[bits[0][1:]] = lambda x: eval(bits[2].split(bits[1])[:-1])
-    elif a[0] == 'quit':
-        print(len(funcs))
-        quit()
+def add_func(fnc_str):
+    bits = fnc_str.split()
+    print(bits)
+    # bits[2] = '('.join(bits[2].split('(')[1].replace(bits[1], 'x'))
+    def f(x):
+        eval( f'({bits[1]} := {x})')
+        print(bits[2])
+        return eval(bits[2])
+    funcs[bits[0]] = f
+
+
+while not (st := input()).startswith('quit'):
+    if st[0] == ':':
+        add_func(st[1:])
     else:
-        bts = a.split()
-        print(funcs)
-        print(bts)
-        print(funcs(funcs[bts[0]](bts[1])))
-        t = eval(funcs[bts[0]](bts[1]), math.__dict__)
-        print(t)
+        func, vars = st.split()
+        print(funcs[func](vars))
+
