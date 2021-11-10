@@ -13,5 +13,4 @@ def fib(m, n):
 
 
 a, b = eval(input())
-for i in fib(a, b):
-    print(i)
+print(*list(fib(a, b)), sep=', ')

@@ -11,7 +11,7 @@ while a < top:
 			sum_digit += num%10
 			num //= 10
 		if sum_digit == 6:
-			print('{a}*{b}=:=)', end=' ')
+			print(f'{a}*{b}=:=)', end=' ')
 			b += 1
 			continue
 		print(f'{a}*{b}={a*b}', end=' ')

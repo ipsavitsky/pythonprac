@@ -12,8 +12,8 @@ def print_field(fld):
         print(i)
 
 
-size_x, size_y = 80, 25
-A, B = -4, 4
+size_x, size_y = 40, 20
+A, B = -6, 6
 field = ['' for _ in range(size_x+1)]
 # print_field(field)
 points = [scale(0, size_x+1, A, B, x) for x in range(size_x+1)]

@@ -4,7 +4,7 @@ while num > 0:
 	sum += num
 	if sum > 21:
 		print(sum)
-	break
+		break
 	num = int(input())
 else:
 	print(num)

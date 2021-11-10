@@ -1,10 +1,8 @@
 N = int(input())
 d = {}
 c = ["."]
-while True:
-    s = input()
-    if s.split() == []:
-        break
+while (s := input()):
+    print(s)
     for i in s:
         if not i.isalpha():
             s = s.replace(i, ' ')
