@@ -1,0 +1,2 @@
+A, B = OrderedComplex(123413, 128734), OrderedComplexMul(123413, 128734)
+print(A<B, B@B)
