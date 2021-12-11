@@ -1,0 +1,7 @@
+@objcount
+class A:
+    pass
+class_list = [A() for _ in range(100)]
+print(class_list[0].counter)
+del class_list[::2]
+print(class_list[0].counter)

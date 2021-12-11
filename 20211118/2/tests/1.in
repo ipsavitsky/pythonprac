@@ -1,0 +1,9 @@
+
+class C:
+    n = Num()
+c = C()
+print(c.n)
+c.n = 1000 - 7
+print(c.n)
+c.n = [0] * 100
+print(c.n)

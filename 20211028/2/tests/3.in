@@ -1,0 +1,1 @@
+print(*list(slide(enumerate([7, 14, 12312, 43, 234, 1, 3421]), 2)))

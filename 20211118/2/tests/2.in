@@ -1,0 +1,10 @@
+class C:
+    n = Num()
+
+c = C()
+
+print(c.n)
+c.n = range(1000)
+print(c.n)
+del c.n
+print(c.n)

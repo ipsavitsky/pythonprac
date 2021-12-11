@@ -12,9 +12,5 @@ class Num:
         obj._val = None
 
 
-class C:
-    num = Num()
-
-
 import sys
 exec(sys.stdin.read())

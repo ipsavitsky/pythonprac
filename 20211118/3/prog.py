@@ -31,9 +31,5 @@ class AlphaQ:
         return ', '.join(res)
     
 
-alp = Alpha(c=10, z=2, a=42)
-alp.e = 123
-print(alp)
-alq = AlphaQ(c=10, z=2, a=42)
-alq.e = 123
-print(alq)
+import sys
+exec(sys.stdin.read())

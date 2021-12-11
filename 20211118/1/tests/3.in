@@ -1,0 +1,15 @@
+from string import ascii_lowercase
+class B:
+    __slots__ = list(ascii_lowercase)
+
+@objcount
+class A:
+    pass
+b = B()
+for letter in ascii_lowercase:
+    setattr(b, letter, A())
+print(b.e.counter)
+pr = b.l
+del b
+print(pr.counter)
+

@@ -1,0 +1,11 @@
+class C:
+    n = Num()
+
+c = C()
+
+print(c.n)
+
+c.n = range(10000)
+print(c.n)
+c.n = c.n//2
+print(c.n)
