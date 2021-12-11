@@ -2,7 +2,7 @@ N = int(input())
 d = {}
 c = ["."]
 while (s := input()):
-    print(s)
+    # print(s)
     for i in s:
         if not i.isalpha():
             s = s.replace(i, ' ')
