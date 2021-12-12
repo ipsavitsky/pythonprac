@@ -1,0 +1,2 @@
+(b'RIFF', 37251162, b'WAVE', b'fmt ', 16, 1, 2, 44100, 176400, 4, 16, b'LIST', 46)
+Size=37251162, Type=1, Channels=2, Rate=44100, Bits=16, Data_size=46
