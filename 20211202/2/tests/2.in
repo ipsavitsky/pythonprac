@@ -1,0 +1,6 @@
+class L(metaclass=check):
+    l: str
+
+l = L()
+l.l = 'l'
+print(l.check_annotations())

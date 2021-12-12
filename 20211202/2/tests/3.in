@@ -1,0 +1,11 @@
+class AB(metaclass=check):
+    a: str
+    b: str
+
+
+ab = AB()
+print(ab.check_annotations())
+ab.a = '123123'
+print(ab.check_annotations())
+ab.b = 'lkajsdf;lka'
+print(ab.check_annotations())

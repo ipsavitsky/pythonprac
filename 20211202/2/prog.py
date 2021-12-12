@@ -6,7 +6,6 @@ class check(type):
         def checker(self):
             al = get_type_hints(self)
             for elem in al.items():
-                print(elem)
                 if not isinstance(getattr(self, elem[0], None), elem[1]):
                     return False
             return True
