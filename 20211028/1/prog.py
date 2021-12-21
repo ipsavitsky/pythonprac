@@ -1,4 +1,10 @@
 def fib(m, n):
+    
+    if m == 1 or (m == 0 and m == n):
+        yield 1
+    elif m == 0:
+        yield 1
+        yield 1
     ctr = 2
     prev1 = 1
     prev2 = 1

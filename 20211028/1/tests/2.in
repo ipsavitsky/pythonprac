@@ -1,1 +1,1 @@
-40, 50
+print(', '.join([str(i) for i in fib(40, 50)]))

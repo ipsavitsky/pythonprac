@@ -20,11 +20,17 @@ for dir in glob(os.path.join('./', "*", "")):
     os.chdir('../')
 
 for line in all_needed_test_execution_lines:
-    print('#'*80)
-    print(line)
+
     try:
         result = subprocess.check_output(line, shell=True ,stderr=subprocess.STDOUT)
     except:
+        print(line)
         print('an error occured\n')
+        print('#'*80)
     else:
-        print(result.decode())
+        dec = result.decode()
+        bits = dec.split()
+        if bits[1::2] != len(bits[1::2]) * ['OK']:
+            print(line)
+            print(dec)
+            print('#'*80)

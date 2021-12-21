@@ -1,1 +1,1 @@
-2, 4
+print(', '.join([str(i) for i in fib(2, 4)]))

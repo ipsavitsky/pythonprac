@@ -15,4 +15,4 @@ def Bisect(a, b):
 
 
 import sys
-eval(sys.stdin.read())
+exec(sys.stdin.read())

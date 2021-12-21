@@ -1,1 +1,1 @@
-100, 300
+print(', '.join([str(i) for i in fib(100, 300)]))
