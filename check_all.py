@@ -25,6 +25,6 @@ for line in all_needed_test_execution_lines:
     try:
         result = subprocess.check_output(line, shell=True ,stderr=subprocess.STDOUT)
     except:
-        print('an error occured')
+        print('an error occured\n')
     else:
         print(result.decode())
