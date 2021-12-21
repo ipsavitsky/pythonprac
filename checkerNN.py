@@ -15,7 +15,7 @@ Then run all tests against program and report the result
 import sys, os
 from os.path import dirname, realpath, isfile, isdir, join, basename, getsize
 from types import ModuleType
-from typing import Any
+from typing import Any, Tuple
 from glob import glob
 from subprocess import run, DEVNULL, PIPE, TimeoutExpired, CompletedProcess
 from tempfile import NamedTemporaryFile as tempf, mkdtemp
@@ -59,7 +59,7 @@ def _todelete():
 
 atexit.register(_todelete)
 
-def guessprog(toProg: str) -> (str, str):
+def guessprog(toProg: str) -> Tuple[str, str]:
     """Guess a program to test
 
 :param toProg:  File patern, directory name or empty string
@@ -81,6 +81,11 @@ def guessprog(toProg: str) -> (str, str):
                     return realpath(f[0]), t
     return "", ""
 
+def preplace(fpath, ein, eout):
+    D, B = dirname(fpath), basename(fpath)
+    return join(D, B.replace(ein, eout))
+
+
 def guesstests(toTest: str) -> list: # list[tuple[str, str]]: # until 3.9
     """Guess tests pairs
 
@@ -95,12 +100,12 @@ def guesstests(toTest: str) -> list: # list[tuple[str, str]]: # until 3.9
             for p in TPATTS:
                 for ein, eout in TINOUTS:
                     P = join(D, p.replace("E", ein))
-                    F.append([(f, g) for f in glob(P) if isfile(f) and isfile(g:=f.replace(ein, eout))])
+                    F.append([(f, g) for f in glob(P) if isfile(f) and isfile(g:=preplace(f, ein, eout))])
     else:
         for ein, eout in TINOUTS:
             if ein in toTest:
                 break
-        F.append([(f, g) for f in glob(toTest) if isfile(f) and isfile(g:=f.replace(ein, eout))])
+        F.append([(f, g) for f in glob(toTest) if isfile(f) and isfile(g:=preplace(f, ein, eout))])
     
     return sorted(max(F, key=len))
 
