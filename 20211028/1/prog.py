@@ -12,5 +12,5 @@ def fib(m, n):
         ctr += 1
 
 
-a, b = eval(input())
-print(*list(fib(a, b)), sep=', ')
+import sys
+exec(sys.stdin.read())

@@ -14,5 +14,5 @@ def Bisect(a, b):
         return Bisect(a, b[:mid])
 
 
-sumb, lst = eval(input())
-print(Bisect(sumb, lst))
+import sys
+eval(sys.stdin.read())

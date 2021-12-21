@@ -8,7 +8,7 @@ class BadTriangle(Exception):
 def TriangleSquare():
     try:
         (x1, y1), (x2, y2), (x3, y3) = eval(input())
-    except (TypeError, NameError, ValueError) as e:
+    except Exception as e:
         raise InvalidInput from e
      
     a = math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1))
@@ -20,12 +20,13 @@ def TriangleSquare():
         raise BadTriangle
     return area
 
-
-try: 
-    res = TriangleSquare()
-except BadTriangle:
-    print('Not a triangle')
-except InvalidInput:
-    print('Invalid input')
-else:
-    print('%.2f' % res)
+while True:
+    try: 
+        res = TriangleSquare()
+    except BadTriangle:
+        print('Not a triangle')
+    except InvalidInput:
+        print('Invalid input')
+    else:
+        print('%.2f' % res)
+        break

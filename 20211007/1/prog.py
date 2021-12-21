@@ -14,5 +14,6 @@ def Pareto(*args):
 
     return tuple([item for item in args if item not in to_delete])
 
-nums = eval(input())
-print(Pareto(*nums))
+import sys
+exec(sys.stdin.read())
+
