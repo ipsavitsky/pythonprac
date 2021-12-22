@@ -179,22 +179,6 @@ python3 checkerNN.py ./20211014/2/ https://git.cs.msu.ru/s90190054/pythonprac-20
 
 
 ################################################################################
-python3 checkerNN.py ./20211014/1/ https://github.com/KH9IZ/PythonPrac/tree/main/20211014/1/tests
-1.in: OK
-
-2.in: OK
-
-3.in: OK
-
-4.in: Output differs
---- 4.out
-+++ <output>
-@@ -1 +1 @@
--False
-+True
-
-
-################################################################################
 python3 checkerNN.py ./20211014/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211014/3/tests
 an error occured
 
@@ -237,37 +221,21 @@ python3 checkerNN.py ./20211014/3/ https://github.com/Veniamin-Arefev/pythonprac
 
 
 ################################################################################
-python3 checkerNN.py ./20210923/3/ https://git.cs.msu.ru/s02180534/pythonprac2021/-/tree/main/20210923/3/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 108
-+Size differs: <output>
+python3 checkerNN.py ./20211125/1/
+1.in: Traceback (most recent call last):
+  File "/home/ilysvtsky/pythonprac/20211125/1/prog.py", line 5, in <module>
+    num = st[0]
+IndexError: index out of range
 
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 138
-+Size differs: <output>
 
-3.in: Output differs
---- 3.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 123
-+Size differs: <output>
+2.in: OK
+
+3.in: OK
 
 
 ################################################################################
 python3 checkerNN.py ./20211125/1/ https://git.cs.msu.ru/s02190226/pythonprac/-/tree/main/20211125/1/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 24
-+Size differs: <output>
+1.in: OK
 
 2.in: Output differs
 --- 2.out
@@ -281,54 +249,6 @@ python3 checkerNN.py ./20211125/1/ https://git.cs.msu.ru/s02190226/pythonprac/-/
 +++ <output>
 @@ -1 +1 @@
 -Size differs: 101
-+Size differs: <output>
-
-
-################################################################################
-python3 checkerNN.py ./20211125/1/ https://git.cs.msu.ru/s02190248/pythonprac/-/tree/main/20211125/1/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 24
-+Size differs: <output>
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 24
-+Size differs: <output>
-
-3.in: Output differs
---- 3.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 24
-+Size differs: <output>
-
-
-################################################################################
-python3 checkerNN.py ./20211125/1/ https://github.com/Uberariy/pythonprac/tree/main/20211125/1/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 24
-+Size differs: <output>
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 27
-+Size differs: <output>
-
-3.in: Output differs
---- 3.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 415
 +Size differs: <output>
 
 
@@ -337,62 +257,8 @@ python3 checkerNN.py ./20211028/1/ https://git.cs.msu.ru/s02190692/python-prac/-
 an error occured
 
 ################################################################################
-python3 checkerNN.py ./20211028/3/ https://github.com/KH9IZ/PythonPrac/tree/main/20211028/3/tests
-1.in: OK
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 14147
-+Size differs: <output>
-
-3.in: OK
-
-
-################################################################################
 python3 checkerNN.py ./20211028/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211028/3/tests
 an error occured
-
-################################################################################
-python3 checkerNN.py ./20211028/3/ https://git.cs.msu.ru/s02190248/pythonprac/-/tree/main/20211028/3/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 14146
-+Size differs: <output>
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 14146
-+Size differs: <output>
-
-3.in: Output differs
---- 3.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 14146
-+Size differs: <output>
-
-
-################################################################################
-python3 checkerNN.py ./20211118/1/ https://git.cs.msu.ru/s02190700/pythonprac/-/tree/main/20211118/1/tests
-1.in: OK
-
-2.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211118/1/prog.py", line 16, in <module>
-    exec(sys.stdin.read())
-  File "<string>", line 9, in <module>
-  File "/home/ilysvtsky/pythonprac/20211118/1/prog.py", line 6, in __init__
-    super().__init__(*args, *kwargs)
-TypeError: object.__init__() takes exactly one argument (the instance to initialize)
-
-
-3.in: OK
-
 
 ################################################################################
 python3 checkerNN.py ./20211118/3/ https://git.cs.msu.ru/s02180534/pythonprac2021/-/tree/main/20211118/3/tests
@@ -551,81 +417,20 @@ TypeError: object dict can't be used in 'await' expression
 
 
 ################################################################################
-python3 checkerNN.py ./20211021/2/ https://github.com/Veniamin-Arefev/pythonprac-2021/tree/main/20211021/2/tests
-1.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 20, in <module>
-    print(funcs[func](vars))
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 11, in f
-    return eval(bits[2])
-  File "<string>", line 1, in <module>
-TypeError: must be real number, not str
-
-
-2.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: too many values to unpack (expected 2)
-
-
-3.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: too many values to unpack (expected 2)
-
-
-
-################################################################################
-python3 checkerNN.py ./20211021/2/ https://git.cs.msu.ru/s90190054/pythonprac-2021/-/tree/main/20211021/2/tests
-1.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 20, in <module>
-    print(funcs[func](vars))
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 11, in f
-    return eval(bits[2])
-  File "<string>", line 1, in <module>
-TypeError: must be real number, not str
-
-
-2.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: not enough values to unpack (expected 2, got 1)
-
-
-3.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: too many values to unpack (expected 2)
-
-
-4.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: too many values to unpack (expected 2)
-
-
-
-################################################################################
 python3 checkerNN.py ./20211021/2/ https://git.cs.msu.ru/s02190290/python-prac-2021/-/tree/main/20211021/2/tests
-1.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 20, in <module>
-    print(funcs[func](vars))
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 11, in f
-    return eval(bits[2])
-  File "<string>", line 1, in <module>
-TypeError: must be real number, not str
+1.in: OK
 
+2.in: Output differs
+--- 2.out
++++ <output>
+@@ -1,3 +1,4 @@
+ 2
+ -1
+-funcs:3\nstrs_numb:5
++funcs:3
++strs_numb:5
 
-2.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: too many values to unpack (expected 2)
-
-
-3.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211021/2/prog.py", line 19, in <module>
-    func, vars = st.split()
-ValueError: not enough values to unpack (expected 2, got 1)
-
+3.in: OK
 
 
 ################################################################################
@@ -846,50 +651,7 @@ TypeError: Bisect() argument after * must be an iterable, not NoneType
 
 
 ################################################################################
-python3 checkerNN.py ./20210930/1/ https://github.com/KH9IZ/PythonPrac/tree/main/20210930/1/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--[51, 12, 41]
-+[12, 51, 41]
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--[10, 20, 1, 2, 3, 4, 11, 18, 5, 15, 6, 12, 7, 16, 19, 8, 13, 9, 17, 14]
-+[1, 2, 3, 4, 10, 11, 5, 15, 18, 20, 6, 12, 7, 16, 19, 8, 13, 9, 17, 14]
-
-3.in: OK
-
-
-################################################################################
 python3 checkerNN.py ./20210930/1/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20210930/1/tests
 an error occured
-
-################################################################################
-python3 checkerNN.py ./20210930/1/ https://github.com/FluFFka/python-prac/tree/main/20210930/1/tests
-1.in: Output differs
---- 1.out
-+++ <output>
-@@ -1 +1 @@
--[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-+[5, 2, 3, 0, 1, 4, 6, 7, 8, 9]
-
-2.in: Output differs
---- 2.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 391
-+Size differs: <output>
-
-3.in: Output differs
---- 3.out
-+++ <output>
-@@ -1 +1 @@
--Size differs: 5513
-+Size differs: <output>
-
 
 ################################################################################
