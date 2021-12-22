@@ -7,13 +7,15 @@ def is_dominated(x, y):
 
 def Pareto(*args):
     to_delete = []
-    for i, first in enumerate(args):
-        for second in args[i+1:]:
+    for first in args:
+        for second in args:
+            # print(f'checking {first} and {second}')
             if is_dominated(first, second):
                 to_delete.append(first)
+                continue
 
     return tuple([item for item in args if item not in to_delete])
 
-import sys
-exec(sys.stdin.read())
+nums = eval(input())
+print(Pareto(*nums))
 

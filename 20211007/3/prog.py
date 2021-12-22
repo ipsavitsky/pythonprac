@@ -1,4 +1,6 @@
 def Bisect(a, b):
+    if list(b) != list(sorted(b)):
+        return False
     size = len(b)
     if size == 1:
         if a == b[0]:
@@ -14,5 +16,4 @@ def Bisect(a, b):
         return Bisect(a, b[:mid])
 
 
-import sys
-exec(sys.stdin.read())
+print(Bisect(*eval(input())))

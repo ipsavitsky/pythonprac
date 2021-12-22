@@ -7,7 +7,7 @@ try:
 except struct.error:
     print("NO")
 else:
-    if data[0] == b'RIFF' and data[2] == b'WAVE' and data[3] == b'fmt ':
+    if data[0] == b'RIFF' and data[2] == b'WAVE' and data[3] == b'fmt ' and data[11] == b'data':
         print(f'Size={data[1]}, Type={data[5]}, Channels={data[6]}, Rate={data[7]}, Bits={data[10]}, Data size={data[12]}')
     else:
         print("NO")
