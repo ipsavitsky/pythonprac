@@ -57,11 +57,11 @@ executing https://github.com/gen-gematogen/pythonprac/tree/main/20211028/2/tests
 executing https://git.cs.msu.ru/s02190029/prakpython/-/tree/main/20211028/2/tests on ./20211028/2/
 executing local tests in ./20211028/1/
 executing https://github.com/FluFFka/python-prac/tree/main/20211028/1/tests on ./20211028/1/
-executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211028/1/tests on ./20211028/1/
+executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211028/1/tests on ./20211028/1/
 executing https://git.cs.msu.ru/s02190141/pythonprac-2021/-/tree/main/20211028/1/tests on ./20211028/1/
 executing local tests in ./20211028/3/
 executing https://github.com/KH9IZ/PythonPrac/tree/main/20211028/3/tests on ./20211028/3/
-executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211028/3/tests on ./20211028/3/
+executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211028/3/tests on ./20211028/3/
 executing https://git.cs.msu.ru/s02190248/pythonprac/-/tree/main/20211028/3/tests on ./20211028/3/
 executing local tests in ./20211118/2/
 executing https://github.com/OzerovaDaria/pythonprac/tree/main/20211118/2/tests on ./20211118/2/
@@ -74,7 +74,8 @@ executing https://git.cs.msu.ru/s02190700/pythonprac/-/tree/main/20211118/1/test
 executing local tests in ./20211118/3/
 executing https://git.cs.msu.ru/s02180534/pythonprac2021/-/tree/main/20211118/3/tests on ./20211118/3/
 executing https://github.com/Veniamin-Arefev/pythonprac-2021/tree/main/20211118/3/tests on ./20211118/3/
-executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211118/3/tests on ./20211118/3/
+executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211118/3/tests on ./20211118/3/
+executing local tests in ./20211213/2/
 executing local tests in ./20211213/1/
 executing https://github.com/OzerovaDaria/pythonprac/tree/main/20211213/1/tests on ./20211213/1/
 executing https://git.cs.msu.ru/s02190226/pythonprac/-/tree/main/20211213/1/tests on ./20211213/1/
@@ -92,7 +93,7 @@ executing https://git.cs.msu.ru/s02190226/pythonprac/-/tree/main/20211021/3/test
 executing https://git.cs.msu.ru/s02190234/pythonprac2021/-/tree/main/20211021/3/tests on ./20211021/3/
 executing https://git.cs.msu.ru/s02190700/pythonprac/-/tree/main/20211021/3/tests on ./20211021/3/
 executing local tests in ./20211202/2/
-executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211202/2/tests on ./20211202/2/
+executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211202/2/tests on ./20211202/2/
 executing https://git.cs.msu.ru/s02190141/pythonprac-2021/-/tree/main/20211202/2/tests on ./20211202/2/
 executing https://git.cs.msu.ru/s02190101/pythonprac-2021/-/tree/main/20211202/2/tests on ./20211202/2/
 executing local tests in ./20211202/1/
@@ -121,12 +122,13 @@ executing https://git.cs.msu.ru/s02190290/python-prac-2021/-/tree/main/20210930/
 executing https://git.cs.msu.ru/s02190226/pythonprac/-/tree/main/20210930/2/tests on ./20210930/2/
 executing local tests in ./20210930/1/
 executing https://github.com/KH9IZ/PythonPrac/tree/main/20210930/1/tests on ./20210930/1/
-executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20210930/1/tests on ./20210930/1/
+executing https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20210930/1/tests on ./20210930/1/
 executing https://github.com/FluFFka/python-prac/tree/main/20210930/1/tests on ./20210930/1/
 executing local tests in ./20210930/3/
 executing https://github.com/gen-gematogen/pythonprac/tree/main/20210930/3/tests on ./20210930/3/
 executing https://git.cs.msu.ru/s02190226/pythonprac/-/tree/main/20210930/3/tests on ./20210930/3/
 executing https://github.com/stamplevskiyd/pythonprac-2021/tree/main/20210930/3/tests on ./20210930/3/
+################################################################################
 python3 checkerNN.py ./20211014/2/ https://github.com/Uberariy/pythonprac/tree/main/20211014/2/tests
 1.in: Output differs
 --- 1.out
@@ -222,11 +224,11 @@ python3 checkerNN.py ./20211014/3/ https://github.com/Veniamin-Arefev/pythonprac
 
 ################################################################################
 python3 checkerNN.py ./20211125/1/
-1.in: Traceback (most recent call last):
-  File "/home/ilysvtsky/pythonprac/20211125/1/prog.py", line 5, in <module>
-    num = st[0]
-IndexError: index out of range
-
+1.in: Output differs
+--- 1.out
++++ <output>
+@@ -0,0 +1 @@
++qeeeeeeqqqqqrrrrrrwwwwww
 
 2.in: OK
 
@@ -253,12 +255,23 @@ python3 checkerNN.py ./20211125/1/ https://git.cs.msu.ru/s02190226/pythonprac/-/
 
 
 ################################################################################
-python3 checkerNN.py ./20211028/1/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211028/1/tests
-an error occured
+python3 checkerNN.py ./20211028/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211028/3/tests
+1.in: Output differs
+--- 1.out
++++ <output>
+@@ -1 +1 @@
+-Size differs: 359
++Size differs: <output>
 
-################################################################################
-python3 checkerNN.py ./20211028/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211028/3/tests
-an error occured
+2.in: OK
+
+3.in: Output differs
+--- 3.out
++++ <output>
+@@ -1 +1 @@
+-Size differs: 626
++Size differs: <output>
+
 
 ################################################################################
 python3 checkerNN.py ./20211118/3/ https://git.cs.msu.ru/s02180534/pythonprac2021/-/tree/main/20211118/3/tests
@@ -290,14 +303,39 @@ python3 checkerNN.py ./20211118/3/ https://github.com/Veniamin-Arefev/pythonprac
 -Size differs: 53
 +Size differs: <output>
 
-2.in: OK
+2.in: Output differs
+--- 2.out
++++ <output>
+@@ -1 +1 @@
+-True
++False
 
-3.in: OK
+3.in: Output differs
+--- 3.out
++++ <output>
+@@ -1 +1 @@
+-True
++False
 
 
 ################################################################################
-python3 checkerNN.py ./20211118/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211118/3/tests
-an error occured
+python3 checkerNN.py ./20211118/3/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211118/3/tests
+1.in: OK
+
+2.in: Output differs
+--- 2.out
++++ <output>
+@@ -1 +1 @@
+-Size differs: 167
++Size differs: <output>
+
+3.in: Output differs
+--- 3.out
++++ <output>
+@@ -1 +1 @@
+-Size differs: 119
++Size differs: <output>
+
 
 ################################################################################
 python3 checkerNN.py ./20211213/1/ https://github.com/OzerovaDaria/pythonprac/tree/main/20211213/1/tests
@@ -469,8 +507,27 @@ EOFError: EOF when reading a line
 
 
 ################################################################################
-python3 checkerNN.py ./20211202/2/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20211202/2/tests
-an error occured
+python3 checkerNN.py ./20211202/2/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20211202/2/tests
+1.in: OK
+
+2.in: OK
+
+3.in: Traceback (most recent call last):
+  File "/home/ilysvtsky/pythonprac/20211202/2/prog.py", line 17, in <module>
+    exec(sys.stdin.read())
+  File "<string>", line 9, in <module>
+  File "/home/ilysvtsky/pythonprac/20211202/2/prog.py", line 7, in checker
+    al = get_type_hints(self)
+  File "/usr/lib/python3.8/typing.py", line 1264, in get_type_hints
+    value = _eval_type(value, globalns, localns)
+  File "/usr/lib/python3.8/typing.py", line 270, in _eval_type
+    return t._evaluate(globalns, localns)
+  File "/usr/lib/python3.8/typing.py", line 518, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+  File "<string>", line 1, in <module>
+NameError: name 'myint' is not defined
+
+
 
 ################################################################################
 python3 checkerNN.py ./20211202/1/ https://git.cs.msu.ru/s02190248/pythonprac/-/tree/main/20211202/1/tests
@@ -651,7 +708,30 @@ TypeError: Bisect() argument after * must be an iterable, not NoneType
 
 
 ################################################################################
-python3 checkerNN.py ./20210930/1/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/main/20210930/1/tests
-an error occured
+python3 checkerNN.py ./20210930/1/ https://git.cs.msu.ru/s02190692/python-prac/-/tree/master/20210930/1/tests
+1.in: Traceback (most recent call last):
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <module>
+    l = [int(x) for x in input().split(',')]
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <listcomp>
+    l = [int(x) for x in input().split(',')]
+ValueError: invalid literal for int() with base 10: ''
+
+
+2.in: Traceback (most recent call last):
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <module>
+    l = [int(x) for x in input().split(',')]
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <listcomp>
+    l = [int(x) for x in input().split(',')]
+ValueError: invalid literal for int() with base 10: ''
+
+
+3.in: Traceback (most recent call last):
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <module>
+    l = [int(x) for x in input().split(',')]
+  File "/home/ilysvtsky/pythonprac/20210930/1/prog.py", line 1, in <listcomp>
+    l = [int(x) for x in input().split(',')]
+ValueError: invalid literal for int() with base 10: ''
+
+
 
 ################################################################################

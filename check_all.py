@@ -19,6 +19,8 @@ for dir in glob(os.path.join('./', "*", "")):
         os.chdir('../')
     os.chdir('../')
 
+print('#'*80)
+
 for line in all_needed_test_execution_lines:
 
     try:
