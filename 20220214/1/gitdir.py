@@ -52,6 +52,15 @@ for head in iglob('../../.git/refs/heads/*'):
     with open(head, 'r') as f:
         branches[basename(head)] = BranchInfo(f.read().strip())
 
+def walk_tree(subtree: str, layer: int) -> None:
+    layer += 1
+    tree_info = trees[subtree]
+    for ref in tree_info.refs:
+        print('  ' * layer + ref[0])
+        if ref[1] in trees:
+            walk_tree(ref[1], layer)
+        
+
 if __name__ == '__main__':
     from sys import argv
     if len(argv) == 1:
@@ -61,6 +70,4 @@ if __name__ == '__main__':
         branch_name = argv[-1]
         commit_hash = branches[branch_name].last_commit
         commit_info = commits[commit_hash]
-        # print(commit_info)
-        tree_info = trees[commit_info.tree]
-        print(tree_info)
+        walk_tree(commit_info.tree, 0)
