@@ -61,4 +61,6 @@ if __name__ == '__main__':
         branch_name = argv[-1]
         commit_hash = branches[branch_name].last_commit
         commit_info = commits[commit_hash]
-        print(commit_info)
+        # print(commit_info)
+        tree_info = trees[commit_info.tree]
+        print(tree_info)
