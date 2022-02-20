@@ -57,3 +57,8 @@ if __name__ == '__main__':
     if len(argv) == 1:
         for branch in branches.keys():
             print(branch)
+    elif len(argv) == 2:
+        branch_name = argv[-1]
+        commit_hash = branches[branch_name].last_commit
+        commit_info = commits[commit_hash]
+        print(commit_info)
