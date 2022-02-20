@@ -1,27 +1,59 @@
-#!/usr/bin/env python3
-'''
-'''
+from dataclasses import dataclass, field
 import zlib
 from glob import iglob
 from os.path import basename, dirname
 
 SHIFT = "  "
 
-for store in iglob(".git/objects/??/*"):
+
+@dataclass
+class BranchInfo:
+    last_commit: str
+
+@dataclass
+class CommitInfo():
+    tree: str
+    parent: str
+    text: str
+
+
+@dataclass
+class TreeInfo():
+    refs: list[tuple[str, str]] = field(default_factory=list)
+
+
+commits = dict()
+trees = dict()
+
+for store in iglob("../../.git/objects/??/*"):
     Id = basename(dirname(store)) + basename(store)
 
     with open(store, "rb") as f:
         obj = zlib.decompress(f.read())
         header, _, body = obj.partition(b'\x00')
         kind, size = header.split()
-    print(Id, kind.decode())
+
     if kind == b'tree':
         tail = body
+        tree_info = TreeInfo()
         while tail:
             treeobj, _, tail = tail.partition(b'\x00')
             tmode, tname = treeobj.split()
             num, tail = tail[:20], tail[20:]
-            print(f"{SHIFT}{tname.decode()} {tmode.decode()} {num.hex()}")
+            tree_info.refs.append((tname.decode(), num.hex()))
+        trees[Id] = tree_info
     elif kind == b'commit':
-        out = body.decode().replace('\n', '\n' + SHIFT)
-        print(f"{SHIFT}{out}")
+        out = body.decode().split()
+        commits[Id] = CommitInfo(out[1], out[3], ' '.join(out[4:]))
+
+branches = dict()
+
+for head in iglob('../../.git/refs/heads/*'):
+    with open(head, 'r') as f:
+        branches[basename(head)] = BranchInfo(f.read().strip())
+
+if __name__ == '__main__':
+    from sys import argv
+    if len(argv) == 1:
+        for branch in branches.keys():
+            print(branch)
