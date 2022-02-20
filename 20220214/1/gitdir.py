@@ -69,5 +69,10 @@ if __name__ == '__main__':
     elif len(argv) == 2:
         branch_name = argv[-1]
         commit_hash = branches[branch_name].last_commit
-        commit_info = commits[commit_hash]
-        walk_tree(commit_info.tree, 0)
+        cur_commit = commits[commit_hash]
+        # print(cur_commit)
+        while cur_commit != None:
+            print('-' * 80)
+            print(cur_commit.text)
+            walk_tree(cur_commit.tree, 0)
+            cur_commit = commits.get(cur_commit.parent, None)
