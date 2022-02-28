@@ -1,18 +1,22 @@
 import textdistance as td
+from multiprocessing import Pool
+
 
 def dist(s1: str, s2: str, type_str: str) -> int:
     match type_str:
         case 'L':
-            return td.levenshtein(s1, s2)
+            ret = td.levenshtein(s1, s2)
         case 'D':
-            return td.damerau_levenshtein(s1, s2)
+            ret = td.damerau_levenshtein(s1, s2)
         case _:
-            return -1
+            ret = -1
+    return ret
 
 s1 = input()
 s2 = input()
 len_type = input()
 
-
-res = dist(s1, s2, len_type)
+pool = Pool(processes=1)
+promised_result = pool.apply_async(dist, (s1, s2, len_type))
+res = promised_result.get()
 
