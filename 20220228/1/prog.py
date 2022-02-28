@@ -1,5 +1,5 @@
 import textdistance as td
-from multiprocessing import Pool
+from multiprocessing import Pool, TimeoutError
 
 
 def dist(s1: str, s2: str, type_str: str) -> int:
@@ -18,5 +18,8 @@ len_type = input()
 
 pool = Pool(processes=1)
 promised_result = pool.apply_async(dist, (s1, s2, len_type))
-res = promised_result.get()
+try:
+    res = promised_result.get(timeout=1)
+except TimeoutError:
+    res = -1
 
