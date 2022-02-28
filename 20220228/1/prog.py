@@ -5,3 +5,8 @@ def dist(s1: str, s2: str) -> int:
 
 s1 = input()
 s2 = input()
+
+
+res = dist(s1, s2)
+
+
