@@ -16,6 +16,7 @@ s1 = input()
 s2 = input()
 len_type = input()
 
+
 pool = Pool(processes=1)
 promised_result = pool.apply_async(dist, (s1, s2, len_type))
 try:
@@ -23,3 +24,4 @@ try:
 except TimeoutError:
     res = -1
 
+print(res)
