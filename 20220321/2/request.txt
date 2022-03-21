@@ -1,0 +1,2 @@
+[feature request]
+В домашке по питону надо добавить autocomplete
