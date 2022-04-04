@@ -14,10 +14,11 @@ Welcome to request's documentation!
     #. Савицкий Илья
     #. Шибаев Павел
 
-Ссылка на репозиторий `тут <https://github.com/ipsavitsky/anchorChecker>`
+Ссылка на репозиторий `тут <https://github.com/ipsavitsky/anchorChecker>`_
 
 Ну и скриншотик:
-    .. image::_static/screenshot.png
+
+.. figure:: _static/screenshot.png
 
 
 Indices and tables
