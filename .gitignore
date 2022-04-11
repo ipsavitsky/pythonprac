@@ -1,2 +1,5 @@
-venv
+venv/
+__pycache__/
 20220404/2/docs/build
+*.pot
+*.mo
