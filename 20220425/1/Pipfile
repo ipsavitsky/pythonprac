@@ -8,8 +8,12 @@ pyfiglet = "*"
 
 [dev-packages]
 doit = "*"
-pybabel = "*"
 black = "*"
+babel = "*"
+coverage = "*"
+wheel = "*"
+setuptools = "*"
+build = "*"
 
 [requires]
 python_version = "3.10"

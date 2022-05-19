@@ -3,3 +3,5 @@ __pycache__/
 20220404/2/docs/build
 *.pot
 *.mo
+.doit.db
+.coverage

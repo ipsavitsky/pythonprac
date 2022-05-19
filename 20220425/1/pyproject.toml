@@ -1,0 +1,3 @@
+[build-system]
+requires = ["build", "coverage", "doit", "pydocstyle", "pyfiglet", "setuptools", "wheel", "black", "babel"]
+build-backend = "setuptools.build_meta"
